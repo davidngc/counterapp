@@ -30,27 +30,15 @@ class _CounterScreenState extends State<CounterScreen> {
       floatingActionButton: Row(
         children: [
           FloatingActionButton(
-              onPressed: () {
-                // print('presionado');
-                counter++;
-                setState(() {});
-              },
+              onPressed: () => setState(() => counter++),
               child: const Icon(Icons.exposure_plus_1)),
           const SizedBox(width: 40),
           FloatingActionButton(
-              onPressed: () {
-                // print('presionado');
-                counter = 0;
-                setState(() {});
-              },
+              onPressed: () => setState(() => counter = 0),
               child: const Icon(Icons.restore)),
           const SizedBox(width: 40),
           FloatingActionButton(
-              onPressed: () {
-                // print('presionado');
-                counter--;
-                setState(() {});
-              },
+              onPressed: () => setState(() => counter--),
               child: const Icon(Icons.exposure_minus_1)),
         ],
         mainAxisAlignment: MainAxisAlignment.center,
